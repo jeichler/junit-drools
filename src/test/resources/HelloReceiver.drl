@@ -1,0 +1,6 @@
+import de.jeichler.test.model.Message
+
+rule "HelloBob"
+    when message : Message( receiver == "Bob" )
+    then message.setContent("Hello " + message.getReceiver());
+end
