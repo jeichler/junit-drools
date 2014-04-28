@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/jeichler/junit-drools.svg?branch=master)](https://travis-ci.org/jeichler/junit-drools)
+
+
 Usage
 =============
 ```java
