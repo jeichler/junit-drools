@@ -20,3 +20,11 @@ public class TestClass {
 
 }
 ```
+
+Limitations
+====================
+Please note that a single rule file can be tested only. In case you need multiple files, you should take integration tests into consideration. This project is just a little helper to verify the single rule files does work as expected
+
+Limitations
+====================
+Please note that a single rule file can be tested only. In case you need multiple files, you should take integration tests into consideration. This project is just a little helper to verify the single rule files does work as expected.
