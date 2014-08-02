@@ -16,7 +16,7 @@ public class TestClass {
   
   @Test
   public void testMethod() {
-    session.insert(message);
+    session.insert(yourObject);
     session.fireAllRules();
     Assert.assertTrue(session.getNumberOfFiredRules() == expectedNumberOfFiredRules);
   }
