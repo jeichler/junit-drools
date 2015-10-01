@@ -2,10 +2,14 @@
 	xmlns="http://maven.apache.org/POM/4.0.0"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>de.jeichler</groupId>
+	<groupId>com.github.jeichler</groupId>
 	<artifactId>junit-drools</artifactId>
 	<version>1.0</version>
 	<packaging>jar</packaging>
+
+	<description>library for unit-testing drools rules</description>
+	<name>junit-drools</name>
+	<url>http://github.com/jeichler/junit-drools</url>
 
 	<properties>
 		<drools.version>6.2.0.Final</drools.version>
@@ -142,4 +146,19 @@
 		<url>http://github.com/jeichler/junit-drools</url>
 		<developerConnection>scm:git:git://github.com/jeichler/junit-drools.git</developerConnection>
 	</scm>
+	
+	<developers>
+		<developer>
+			<name>Janine Eichler</name>
+			<email>janineeichler@gmail.com</email>
+			<url>http://github.com/jeichler</url>
+		</developer>
+	</developers>
+	<licenses>
+		<license>
+			<name>Apache License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
 </project>
