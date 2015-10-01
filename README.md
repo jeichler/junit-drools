@@ -4,7 +4,7 @@
 Usage
 =============
 ```java
-@DroolsFiles(ruleFile = "some/folder/in/resources/YourRuleFile.drl")
+@DroolsFiles(ruleFiles = {"some/folder/in/resources/YourRuleFile.drl", "some/folder/in/resources/YourRuleFlow.bpmn"})
 @RunWith(DroolsJUnitRunner.class)
 public class TestClass {
 
@@ -24,6 +24,7 @@ public class TestClass {
 }
 ```
 
-Limitations
-====================
-Please note that a single rule file can be tested only. In case you need multiple files, you should take integration tests into consideration. This project is just a little helper to verify a single rule file does work as expected.
+Some thoughts about the usage
+===============
+
+Though I added support for rule flows (a pretty basic one, and yes, on purpose, i skipped adding whole folders at once because I'm not convinced that it helps testing your application.) I'm not a big fan of seeing them in unit tests). They should be part of integration tests and hence be run in the respective application context and the flows should be started by the respective components in your application. However for a quick peek you might use this runner for flows as well.

@@ -1,4 +1,4 @@
-import de.jeichler.test.model.Message
+import com.github.jeichler.junit.drools.model.Message
 
 rule "HelloBob"
     when message : Message( receiver == "Bob" )

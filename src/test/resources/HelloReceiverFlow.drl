@@ -1,0 +1,11 @@
+import com.github.jeichler.junit.drools.model.Message
+
+rule "HelloBob" ruleflow-group "flow-group"
+    when message : Message( receiver == "Bob" )
+    then message.setContent("Hello " + message.getReceiver());
+end
+
+rule "Alice" ruleflow-group "not-matching-flow-group"
+    when message : Message( receiver == "Alice" )
+    then message.setContent("Hello Stranger");
+end
