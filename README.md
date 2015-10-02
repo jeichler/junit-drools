@@ -7,7 +7,7 @@ The library is available on maven central. Simply include it in your pom:
 ```xml
 <dependency>
 	<groupId>com.github.jeichler</groupId>
-	<artificatId>junit-drools</artificatId>
+	<artifactId>junit-drools</artifactId>
 	<version>1.0</version>
 	<scope>test</scope>
 </dependency>
