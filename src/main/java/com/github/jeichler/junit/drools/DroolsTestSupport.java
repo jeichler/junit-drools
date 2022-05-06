@@ -14,7 +14,6 @@ import org.kie.api.runtime.KieContainer;
 import org.kie.api.runtime.KieSession;
 import org.kie.api.runtime.StatelessKieSession;
 
-import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
 
@@ -49,11 +48,6 @@ class DroolsTestSupport {
             InputStream ruleFileIs = DroolsTestSupport.class.getResourceAsStream("/" + ruleFile);
             Assert.assertNotNull("Can't open stream for rule file. Does it exist?", ruleFileIs);
             kfs.write(ks.getResources().newInputStreamResource(ruleFileIs).setSourcePath(ruleFile));
-            try {
-                ruleFileIs.close();
-            } catch (IOException e) {
-                throw new RuntimeException("InputStream of rule file could not be closed.");
-            }
         }
         kieBuilder.buildAll();
 
