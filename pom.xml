@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.github.jeichler</groupId>
 	<artifactId>junit-drools</artifactId>
-	<version>1.0</version>
+	<version>1.0.1</version>
 	<packaging>jar</packaging>
 
 	<description>library for unit-testing drools rules</description>
@@ -12,7 +12,7 @@
 	<url>http://github.com/jeichler/junit-drools</url>
 
 	<properties>
-		<drools.version>6.2.0.Final</drools.version>
+		<drools.version>7.68.0.Final</drools.version>
 	</properties>
 
 	<dependencyManagement>
